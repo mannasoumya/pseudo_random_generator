@@ -5,6 +5,8 @@ exports.pseudo_random = function(start, end, how_many) {
   function random(m1, m2) {
     return m1 + Math.floor(Math.random() * (m2 - m1 + 1));
   }
+  /* returns an array of Pseudo Random numbers if the number of random numbers required is in between range.. 
+  otherwise returns random numbers with repetition*/ 
   function generateRandom(m1, m2, n) {
     if (n <= m2 - m1 + 1) {
       let initial = random(m1, m2);
